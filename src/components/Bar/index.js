@@ -30,7 +30,7 @@ function Bar ({ title, XData, yData, style }) {
 
   useEffect(() => {
     chartInit()
-  }, [])
+  })
 
   return (
     <div>

@@ -19,6 +19,7 @@ const GeekLayout = () => {
   const { userStore, loginStore } = useStore()
   const navigate = useNavigate()
   useEffect(() => {
+    // console.log(pathname)
     userStore.getUserInfo()
   }, [userStore])
   const confirm = () => {
@@ -50,7 +51,7 @@ const GeekLayout = () => {
             defaultSelectedKeys={[pathname]}
             style={{ height: '100%', borderRight: 0 }}
           >
-            <Menu.Item icon={<HomeOutlined />} key="/">
+            <Menu.Item icon={<HomeOutlined />} key='/'>
               <Link to='/'>数据概览</Link>
             </Menu.Item>
             <Menu.Item icon={<DiffOutlined />} key="/article">
